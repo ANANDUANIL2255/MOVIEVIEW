@@ -1,0 +1,46 @@
+<!-- <p>movie works!</p> -->
+<div 
+style=" background-image: url(https://i.postimg.cc/GpD2179W/movie-9pvmdtvz4cb0xl37.jpg);;background-repeat: no-repeat;background-size: cover;margin: 0;background-attachment: fixed; width: 100%;"
+class="">
+<div style="background: linear-gradient(to bottom, #08c5cf, #df0753, #0da6a3);" class="w-100 sticky-top">
+  
+  <div>
+    <h1 style="font-size: xx-large;font-family: 'Nosifer', sans-serif; color: white;"><i class="fa-solid fa-video fa-beat-fade fa-2x"style="margin-left: 20px;color:black;"></i>  <span style="color: black;">Movie</span> Zone</h1>
+  </div>
+</div>
+
+<div class="container-fluid w-75  " style="align-items: center;margin-top: 20px;">
+    
+  <form [formGroup]="search" action=""><br>
+    <div style="font-family: 'MedievalSharp', cursive;"> <input formControlName="movie" name="movie" class="form-control w-100 col-lg-4 " id="example" type="text" placeholder="Enter a movie name">
+    </div>
+    <div class="text-center" style="font-family: 'Caveat', cursive;">
+      <button (click)="movie()" type="button" class="btn btn-danger  mt-4 ">SEARCH  <i class="fa-solid fa-magnifying-glass fa-fade" style="margin-left: 5px;"></i></button>
+    </div>
+  </form> 
+</div>
+<br>
+<div class="row m-5"  style="font-family: 'Kavoon', serif;">
+    <div class="col-md-5">
+     <img style="height: 100%;" src="{{movieData.Poster}}" alt="">
+    </div>
+    <div *ngIf="check" class="col-md-6 " style="margin-left: 50px; background-image: url(https://i.postimg.cc/L60CcvcB/istockphoto-453554783-612x612.jpg);background-size: cover;background-repeat: no-repeat">
+    <h3 style="color: #df0753;">Title: <br> <p style="color:green;">{{movieData.Title}}</p></h3>
+    <h3 style="color: #df0753;">Plot:<br> <p  style="color:green;">{{movieData.Plot}}</p></h3>
+    <h3 style="color: #df0753;">Actors:<br> <p style="color:green;">{{movieData.Actors}}</p> </h3>
+    <h3 style="color: #df0753;">Director:<br><p style="color:green;">{{movieData.Director}}</p> </h3>
+    <h2 style="color: #df0753;">Realesed Date:<br><p style="color:green;"> {{movieData.Year}}</p></h2>
+
+
+
+
+    </div>
+
+</div>
+
+
+      <!-- </div> -->
+
+
+
+</div>
